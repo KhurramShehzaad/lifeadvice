@@ -1,0 +1,1 @@
+<script>window.location='tab_info.php?product_id=2';</script>
