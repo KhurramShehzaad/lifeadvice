@@ -1,0 +1,13 @@
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+ErrorDocument 404 /404.php
+ErrorDocument 503 /503.php
+
+Options +FollowSymLinks
+RewriteRule blog/(.*)/(.*)/ blog-post.php?url=$1&id=$2 [QSA,L,NC]
+RewriteRule blog/(.*)/(.*) blog-post.php?url=$1&id=$2 [QSA,L,NC]
+
+#RewriteRule blog/ blogs.php [QSA,L,NC]
+#RewriteRule blog blogs.php [QSA,L,NC]
