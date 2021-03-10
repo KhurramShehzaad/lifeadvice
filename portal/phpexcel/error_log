@@ -1,0 +1,2 @@
+[19-Mar-2018 16:04:46 UTC] PHP Fatal error:  Class 'PHPExcel_IOfactory' not found in /home/root2quotevtcins/public_html/admin/phpexcel/excel.php on line 9
+[19-Mar-2018 16:19:22 UTC] PHP Fatal error:  Function name must be a string in /home/root2quotevtcins/public_html/admin/phpexcel/excel.php on line 10
